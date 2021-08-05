@@ -1,0 +1,37 @@
+app:
+  message: This is the properties file for the ${spring.application.name} specific to DEV Enveroment
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      jadira:
+        usertype:
+          autoRegisterUserTypes: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: &dbURL jdbc:postgresql://localhost:5432/adopt_pet?currentSchema=pet
+    username: &dbUser postgres
+    password: &dbPassword postgres
+  flyway:
+    baseline-on-migrate: true
+    url: *dbURL
+    user: *dbUser
+    password: *dbPassword
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+springdoc:
+  show-login-endpoint: true
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method
+server:
+  error:
+    include-stacktrace: never
