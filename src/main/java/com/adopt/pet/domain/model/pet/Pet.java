@@ -1,9 +1,10 @@
 package com.adopt.pet.domain.model.pet;
 
 import com.adopt.pet.commons.enums.person.Gender;
+import com.adopt.pet.commons.enums.pet.*;
 import com.adopt.pet.domain.model.files.File;
 import com.adopt.pet.domain.model.person.Person;
-import com.adopt.pet.domain.model.person.Size;
+import com.adopt.pet.commons.enums.pet.Size;
 
 import java.time.LocalDate;
 import java.util.List;

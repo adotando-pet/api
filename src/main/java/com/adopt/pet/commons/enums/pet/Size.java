@@ -1,4 +1,4 @@
-package com.adopt.pet.domain.model.person;
+package com.adopt.pet.commons.enums.pet;
 
 public enum Size {
     SMALL, MID, LARGE

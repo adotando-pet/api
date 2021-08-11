@@ -1,4 +1,4 @@
-package com.adopt.pet.domain.model.pet;
+package com.adopt.pet.commons.enums.pet;
 
 public enum Color {
     WHITE,
