@@ -29,4 +29,5 @@ public class Pet {
     private List<Sociable> sociables;
     private List<Temperament> temperaments;
     private List<File> photos;
+    private Type type;
 }
